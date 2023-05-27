@@ -1,0 +1,46 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+h1, h2, h3, p, body {
+    padding: 0;
+    margin: 0;
+}
+.logo-section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    width: 40vw;
+}
+.greenery {
+ 
+}
+.odin-logo {
+    
+    width: 40%;
+}
+.logo-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    
+    background: rgba(0, 0, 0, 0.5);
+}
+.logo-title {
+    font-family: 'Rubik Puddles', cursive;
+    color: white;
+    font-size: 3rem;
+}
+.attribution {
+
+    
+    position: absolute;
+    bottom: 20px;
+    
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
