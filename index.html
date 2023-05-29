@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Sign up</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="logo-section">
@@ -17,26 +18,30 @@
     </div>
     <div class="form-content">
         <p class="form-intro-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
-            You know you want to.</p>
+            <br><br>You <em>know</em> you want to.</p>
         <form method="post">
             <h2>Let's Go!</h2>
             <label for="first-name">First name</label>
-            <input type="text" name="first-name">
+            <input type="text" name="first-name" class="first-name" required>
 
             <label for="last-name">Last name</label>
-            <input type="text" name="last-name">
+            <input type="text" name="last-name" required>
 
             <label for="email">Email</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
 
             <label for="password">Password</label>
-            <input type="password" name="password">
+            <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must have length of at least 6 and contain at least 1 lowercase letter, 1 uppercase letter and 1 number" required>
 
             <label for="confirm-password">Confirm password</label>
-            <input type="password" name="confirm-password">
+            <input type="password" name="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must have length of at least 6 and contain at least 1 lowercase letter, 1 uppercase letter and 1 number" required>
 
-            <button type="submit" class="submit-btn">Submit</button>
+            <button type="submit" class="submit-btn">Create Account</button>
+            <p class="login-text">Already have an account? <a href="#" class="login-link">Log in</a></p>
         </form>
+        
     </div>
+   
+
 </body>
 </html>

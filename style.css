@@ -14,7 +14,6 @@ body {
     height: 100vh;
     background-image: url("images/mountain.jpg");
     background-size: cover;
-    background-color: red;
 }
 .logo-background {
     display: flex;
@@ -58,17 +57,33 @@ form {
     gap: 5px;
     width: 60%;
 }
+.login-text {
+    text-align: left;
+}
+.login-link{
+    text-decoration: none;
+}
 input {
     border-radius: 5px;
+    border: 0px solid black;
     height: 25px;
 }
+
+input:user-invalid{
+    border: 2px solid red;
+}
 .submit-btn {
+    margin-top: 10px;
     width: 40%;
     height: 10%;
     border-radius: 6px;
-
+    border: 0px solid black;
     font-size: 1rem;
     background-color: #a9b5c0;
+}
+.submit-btn:hover{
+    background-color: #95bbd0;
+    color: white;
 }
 h2 {
     font-size:xx-large;
